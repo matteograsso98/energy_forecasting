@@ -1,3 +1,6 @@
+# This code is useful to do operation with the non-relation Dynamodb
+# It can be used to query data, update data, check if the data got updated after the update, ... 
+
 import boto3
 import time
 import pandas as pd
@@ -7,8 +10,8 @@ from boto3.dynamodb.conditions import Key
 from decimal import Decimal
 from concurrent.futures import ThreadPoolExecutor, as_completed
 from google_auth_oauthlib.flow import InstalledAppFlow
-#from googleapiclient.discovery import build
-#from googleapiclient.http import MediaFileUpload
+from googleapiclient.discovery import build
+from googleapiclient.http import MediaFileUpload
 from google.oauth2.credentials import Credentials
 import os
 import json
