@@ -1,8 +1,12 @@
-mport numpy as np
+import numpy as np
 import pandas as pd
 import tensorflow as tf
 from sklearn.preprocessing import MinMaxScaler
 import matplotlib.pyplot as plt
+
+#input_features: list of feature names (e.g., ["temperature", "radiation", ...])
+#X should be a 2D NumPy array of shape (n_samples, len(input_features))
+#y should be a 1D NumPy array of shape (n_samples,) with energy production in kWh
 
 # Sample Data Preparation (Replace with your actual data)
 # Assuming `weather_data` is a DataFrame with columns: 'temperature', 'diffuse_radiation', 'direct_radiation', etc.
